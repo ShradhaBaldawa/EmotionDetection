@@ -45,9 +45,7 @@ while True:
 
     # Show the image
     cv2.imshow('Capture',   im)
-    category={"Happy","Sad","Angry","Neutral","Surprise"}
-    if text in category:
-        print(text)
+    key = cv2.waitKey(10)
+    # if Esc key is press then break out of the loop 
+    if key == 27: #The Esc key
         break
-    else:
-        continue
